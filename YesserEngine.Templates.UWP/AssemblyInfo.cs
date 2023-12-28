@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("YesserEngine")]
+[assembly: AssemblyTitle("YesserEngine.Templates.UWP")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("YesserEngine")]
-[assembly: AssemblyCopyright("")]
+[assembly: AssemblyCompany("Yesseruser")]
+[assembly: AssemblyProduct("YesserEngine.Templates.UWP")]
+[assembly: AssemblyCopyright("Copyright © Yesseruser 2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -18,6 +18,9 @@ using System.Runtime.InteropServices;
 // to COM components.  If you need to access a type in this assembly from 
 // COM, set the ComVisible attribute to true on that type.
 [assembly: ComVisible(false)]
+
+// The following GUID is for the ID of the typelib if this project is exposed to COM
+[assembly: Guid("d6ffa94a-a386-407f-a016-cd71f1dfdb0b")]
 
 // Version information for an assembly consists of the following four values:
 //
