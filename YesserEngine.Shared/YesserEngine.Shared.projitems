@@ -16,6 +16,7 @@
     <None Include="$(MSBuildThisFileDirectory)Content\Content.mgcb" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)EngineGame.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GameObject.cs" />
   </ItemGroup>
 </Project>

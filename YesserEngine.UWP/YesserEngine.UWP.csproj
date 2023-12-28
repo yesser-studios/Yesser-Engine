@@ -4,8 +4,8 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EC53B98A-9C44-441C-8828-C06A081D41E9}</ProjectGuid>
-    <OutputType>winmdobj</OutputType>
+    <ProjectGuid>{6121D244-C789-473E-BE27-5AED39F62D05}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>YesserEngine.UWP</RootNamespace>
     <AssemblyName>YesserEngine.UWP</AssemblyName>
@@ -16,7 +16,6 @@
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <AllowCrossPlatformRetargeting>false</AllowCrossPlatformRetargeting>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -123,13 +122,22 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\YesserEngine.UWP.rd.xml" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.14</Version>
     </PackageReference>
+    <PackageReference Include="MonoGame.Content.Builder.Task">
+      <Version>3.8.1.303</Version>
+    </PackageReference>
+    <PackageReference Include="MonoGame.Framework.WindowsUniversal">
+      <Version>3.8.1.303</Version>
+    </PackageReference>
   </ItemGroup>
-  <Import Project="..\YesserEngine.Shared\YesserEngine.Shared.projitems" Label="Shared" />
+  <ItemGroup>
+    <None Include="YesserEngine.UWP.nuspec" />
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

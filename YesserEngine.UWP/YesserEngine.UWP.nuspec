@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>YesserEngine.UWP</id>
+    <version>1.0.0</version>
+    <title>Yesser Engine for UWP</title>
+    <authors>Yesser Studios</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <!-- <icon>icon.png</icon> -->
+    <projectUrl>https://github.com/Yesser-Studios/Yesser-Engine</projectUrl>
+    <description>$description$</description>
+    <releaseNotes>A UWP package for Yesser Engine.</releaseNotes>
+    <copyright>$copyright$</copyright>
+    <tags>Tag1 Tag2</tags>
+  </metadata>
+</package>

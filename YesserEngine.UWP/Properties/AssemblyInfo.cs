@@ -17,7 +17,7 @@ using System.Runtime.InteropServices;
 // Informace o verzi sestavení se skládá z těchto čtyř hodnot:
 //
 //      Hlavní verze
-//      Dílčí verze 
+//      Podverze 
 //      Číslo sestavení
 //      Revize
 //
