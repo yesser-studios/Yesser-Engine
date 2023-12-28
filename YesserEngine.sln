@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YesserEngine.UWP", "YesserE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YesserEngine.Templates.UWP", "YesserEngine.Templates.UWP\YesserEngine.Templates.UWP.csproj", "{D6FFA94A-A386-407F-A016-CD71F1DFDB0B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YesserEngine.VSIX", "YesserEngine.Vsix\YesserEngine.VSIX.csproj", "{65C44E13-0AB7-42BA-A1CE-189DAA98785D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
