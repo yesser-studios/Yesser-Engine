@@ -14,7 +14,7 @@
   <mp:PhoneIdentity PhoneProductId="4dfa9039-3fac-47ef-aca5-bc6f8564f920" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>test</DisplayName>
+    <DisplayName>YesserEngine.TemplateProjects.UWP</DisplayName>
     <PublisherDisplayName>User</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -29,13 +29,13 @@
 
   <Applications>
     <Application Id="App"
-      Executable="test.exe"
-      EntryPoint="test.App">
+      Executable="YesserEngine.TemplateProjects.UWP.exe"
+      EntryPoint="YesserEngine.TemplateProjects.UWP.App">
       <uap:VisualElements
-        DisplayName="test"
+        DisplayName="YesserEngine.TemplateProjects.UWP"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png"
-        Description="test"
+        Description="YesserEngine.TemplateProjects.UWP"
         BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />

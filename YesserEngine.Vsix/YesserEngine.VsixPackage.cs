@@ -24,8 +24,8 @@ namespace YesserEngine.Vsix
     /// </para>
     /// </remarks>
     [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]
-    [Guid(YesserEngine.VsixPackage.PackageGuidString)]
-    public sealed class YesserEngine.VsixPackage : AsyncPackage
+    [Guid(YesserEngine.PackageGuidString)]
+    public sealed class YesserEngine : AsyncPackage
     {
          /// <summary>
         /// YesserEngine.VsixPackage GUID string.
