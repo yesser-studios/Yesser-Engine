@@ -14,4 +14,10 @@
     <copyright>Copyright 2023-2024 Yesser Studios</copyright>
     <tags>yesserengine monogame engine xna</tags>
   </metadata>
+
+    <files>
+        <file src="bin\Release\ImageEnhancer.winmd" target="lib\uap10.0"/>
+        <file src="bin\Release\ImageEnhancer.dll" target="lib\uap10.0"/>
+        <file src="bin\Release\ImageEnhancer.xml" target="lib\uap10.0"/>
+    </files>
 </package>
