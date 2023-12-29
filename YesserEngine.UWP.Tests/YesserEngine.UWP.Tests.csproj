@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{0BAFEEBF-7512-4CC3-A7E8-7FDD84C04BEF}</ProjectGuid>
+    <ProjectGuid>{FA6B46C4-E0CA-4233-B3BE-B66614F4702D}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>YesserEngine.UWP.Tests</RootNamespace>
@@ -150,20 +150,11 @@
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.14</Version>
     </PackageReference>
-    <PackageReference Include="MonoGame.Content.Builder.Task">
-      <Version>3.8.1.303</Version>
-    </PackageReference>
-    <PackageReference Include="MonoGame.Framework.WindowsUniversal">
-      <Version>3.8.1.303</Version>
-    </PackageReference>
     <PackageReference Include="MSTest.TestAdapter">
-      <Version>3.1.1</Version>
+      <Version>2.2.7</Version>
     </PackageReference>
     <PackageReference Include="MSTest.TestFramework">
-      <Version>3.1.1</Version>
-    </PackageReference>
-    <PackageReference Include="Newtonsoft.Json">
-      <Version>13.0.3</Version>
+      <Version>2.2.7</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>

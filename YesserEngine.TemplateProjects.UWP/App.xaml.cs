@@ -29,6 +29,7 @@ namespace YesserEngine.TemplateProjects.UWP
         public App()
         {
             this.InitializeComponent();
+            this.RequiresPointerMode = ApplicationRequiresPointerMode.WhenRequested;
             this.Suspending += OnSuspending;
         }
 

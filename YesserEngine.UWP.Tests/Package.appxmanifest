@@ -5,11 +5,11 @@
   xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
   IgnorableNamespaces="uap mp">
 
-  <Identity Name="d9b583a0-0c07-4730-b062-6e5704e837a3"
+  <Identity Name="27ccff7b-52a5-4f01-885b-b02e9aa75fc8"
             Publisher="CN=yesseruser"
             Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="d9b583a0-0c07-4730-b062-6e5704e837a3" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="27ccff7b-52a5-4f01-885b-b02e9aa75fc8" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>YesserEngine.UWP.Tests</DisplayName>
