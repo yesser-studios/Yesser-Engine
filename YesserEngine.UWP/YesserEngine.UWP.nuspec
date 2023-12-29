@@ -16,8 +16,21 @@
   </metadata>
 
     <files>
-        <file src="bin\Release\ImageEnhancer.winmd" target="lib\uap10.0"/>
-        <file src="bin\Release\ImageEnhancer.dll" target="lib\uap10.0"/>
-        <file src="bin\Release\ImageEnhancer.xml" target="lib\uap10.0"/>
+        <file src="bin\Release\YesserEngine.UWP.winmd" target="lib\uap10.0"/>
+        <file src="bin\Release\YesserEngine.UWP.dll" target="lib\uap10.0"/>
+        <file src="bin\Release\YesserEngine.UWP.xml" target="lib\uap10.0"/>
+
+        <!-- WINMDs and resources -->
+        <file src="bin\ARM\Release\YesserEngine.UWP.winmd" target="runtimes\win10-arm"/>
+        <file src="bin\ARM\Release\YesserEngine.UWP.pri" target="runtimes\win10-arm"/>
+
+        <file src="bin\ARM64\Release\YesserEngine.UWP.winmd" target="runtimes\win10-arm64"/>
+        <file src="bin\ARM64\Release\YesserEngine.UWP.pri" target="runtimes\win10-arm64"/>
+
+        <file src="bin\x64\Release\YesserEngine.UWP.winmd" target="runtimes\win10-x64"/>
+        <file src="bin\x64\Release\YesserEngine.UWP.pri" target="runtimes\win10-x64"/>
+
+        <file src="bin\x86\Release\YesserEngine.UWP.winmd" target="runtimes\win10-x86"/>
+        <file src="bin\x86\Release\YesserEngine.UWP.pri" target="runtimes\win10-x86"/>
     </files>
 </package>
