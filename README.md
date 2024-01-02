@@ -4,5 +4,6 @@
 )](https://github.com/Yesser-Studios/Yesser-Engine/issues)
 [![GitHub License](https://img.shields.io/github/license/Yesser-Studios/Yesser-Engine)](https://github.com/Yesser-Studios/Yesser-Engine/blob/main/LICENSE.txt)
 [![CodeFactor](https://www.codefactor.io/repository/github/yesser-studios/yesser-engine/badge)](https://www.codefactor.io/repository/github/yesser-studios/yesser-engine)
+![GitHub repo size](https://img.shields.io/github/repo-size/Yesser-Studios/Yesser-Engine)
 
 Under development.
