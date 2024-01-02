@@ -7,6 +7,12 @@
       "commands": [
         "mgcb"
       ]
+    },
+    "dotnet-mgcb-editor": {
+      "version": "3.8.1.303",
+      "commands": [
+        "mgcb-editor"
+      ]
     }
   }
 }
