@@ -7,7 +7,7 @@
 [![GitHub License](https://img.shields.io/github/license/Yesser-Studios/Yesser-Engine)](https://github.com/Yesser-Studios/Yesser-Engine/blob/main/LICENSE.txt)
 [![CodeFactor](https://www.codefactor.io/repository/github/yesser-studios/yesser-engine/badge)](https://www.codefactor.io/repository/github/yesser-studios/yesser-engine)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Yesser-Studios/Yesser-Engine)
-![GitHub Repo stars](https://img.shields.io/github/stars/Yesser-Studios/Yesser-Engine?style=flat)
-[![GitHub forks](https://img.shields.io/github/forks/Yesser-Studios/Yesser-Engine?style=flat)](https://github.com/Yesser-Studios/Yesser-Engine/fork)
+![GitHub Repo stars](https://img.shields.io/github/stars/Yesser-Studios/Yesser-Engine?style=flat&color=%23fcba03)
+[![GitHub Repo forks](https://img.shields.io/github/forks/Yesser-Studios/Yesser-Engine?style=flat)](https://github.com/Yesser-Studios/Yesser-Engine/fork)
 
 Under development.
