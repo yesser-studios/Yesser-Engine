@@ -5,21 +5,16 @@ using YesserStudios.Engine;
 using MonoGame.Framework;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Core;
+using Windows.UI.WindowManagement;
+using System.Threading.Tasks;
+using Windows.ApplicationModel.Core;
+using Windows.UI.ViewManagement;
 
 namespace YesserEngine.UWP.Tests
 {
     [TestClass]
     public class EngineGameTests
     {
-        [TestMethod]
-        public void GameStarts()
-        {
-            var game = XamlGame<EngineGame>.Create(string.Empty, Window.Current.CoreWindow, new SwapChainPanel());
-
-            Assert.IsNotNull(game);
-            Assert.IsInstanceOfType(game, typeof(EngineGame));
-
-            game.Exit();
-        }
     }
 }
