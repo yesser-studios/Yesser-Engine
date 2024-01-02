@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace YesserEngine.Shared.CustomEventArgs
+namespace YesserEngine.CustomEventArgs
 {
     public class ContentEventArgs : EventArgs
     {

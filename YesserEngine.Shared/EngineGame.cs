@@ -1,9 +1,9 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;
-using YesserEngine.Shared.CustomEventArgs;
+using YesserEngine.CustomEventArgs;
 
-namespace YesserEngine.Shared
+namespace YesserEngine
 {
     public class EngineGame : Game
     {
