@@ -16,6 +16,5 @@ namespace YesserEngine.UWP.Tests
     [TestClass]
     public class EngineGameTests
     {
-        
     }
 }
