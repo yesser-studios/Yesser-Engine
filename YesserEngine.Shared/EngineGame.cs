@@ -1,14 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
+using System;
+using YesserEngine.Shared.CustomEventArgs;
 
-namespace YesserStudios.Engine
+namespace YesserEngine.Shared
 {
     public class EngineGame : Game
     {
+        public event EventHandler<ContentEventArgs> LoadContentEvent;
+        public event EventHandler UpdateEvent;
+        public event EventHandler<ContentEventArgs> DrawEvent;
+
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
 
@@ -30,15 +32,22 @@ namespace YesserStudios.Engine
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
 
+            if (LoadContentEvent != null)
+            {
+                var args = new ContentEventArgs(_spriteBatch);
+                LoadContentEvent(this, args);
+            }
+
             // TODO: use this.Content to load your game content here
         }
 
         protected override void Update(GameTime gameTime)
         {
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
-                Exit();
+            // if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
+            //     Exit();
 
-            // TODO: Add your update logic here
+            if (UpdateEvent != null)
+                UpdateEvent(this, EventArgs.Empty);
 
             base.Update(gameTime);
         }
@@ -49,7 +58,46 @@ namespace YesserStudios.Engine
 
             // TODO: Add your drawing code here
 
+            if (DrawEvent != null)
+            {
+                var args = new ContentEventArgs(_spriteBatch);
+                DrawEvent(this, args);
+            }
+
             base.Draw(gameTime);
         }
+
+        public virtual void RegisterGameObject(IGameObject gameObject)
+        {
+            if (gameObject is null)
+                return;
+
+            LoadContentEvent += gameObject.LoadContent;
+            UpdateEvent += gameObject.Update;
+            DrawEvent += gameObject.Draw;
+
+            gameObject.Initialize();
+        }
+
+#if DEBUG
+        public EngineGame(bool tests)
+        {
+            if (!tests)
+                
+        }
+
+        public void InvokeLoadContentEvent(ContentEventArgs args)
+        {
+            LoadContentEvent(this, args);
+        }
+        public void InvokeUpdateEvent(EventArgs args)
+        {
+            UpdateEvent(this, args);
+        }
+        public void InvokeDrawEvent(ContentEventArgs args)
+        {
+            DrawEvent(this, args);
+        }
+#endif
     }
 }
