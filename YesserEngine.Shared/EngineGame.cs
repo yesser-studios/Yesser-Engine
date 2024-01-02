@@ -14,6 +14,8 @@ namespace YesserEngine
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
 
+        private bool _instaExit = false;
+
         public EngineGame()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -24,6 +26,9 @@ namespace YesserEngine
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
+
+            if (_instaExit)
+                Exit();
 
             base.Initialize();
         }
@@ -80,10 +85,13 @@ namespace YesserEngine
         }
 
 #if DEBUG
-        public EngineGame(bool tests)
+        public EngineGame(bool instaExit)
         {
-            if (!tests)
-                
+            _instaExit = instaExit;
+
+            _graphics = new GraphicsDeviceManager(this);
+            Content.RootDirectory = "Content";
+            IsMouseVisible = true;
         }
 
         public void InvokeLoadContentEvent(ContentEventArgs args)
