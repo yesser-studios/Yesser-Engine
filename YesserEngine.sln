@@ -13,11 +13,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YesserEngine.UWP", "YesserE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YesserEngine.UWP.Tests", "YesserEngine.UWP.Tests\YesserEngine.UWP.Tests.csproj", "{FA6B46C4-E0CA-4233-B3BE-B66614F4702D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YesserEngine.OpenGL", "YesserEngine.OpenGL\YesserEngine.OpenGL.csproj", "{74D39039-7585-4B17-99DD-9DC6A5E7EC67}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YesserEngine.OpenGL.Tests", "YesserEngine.OpenGL.Tests\YesserEngine.OpenGL.Tests.csproj", "{00C607E0-3CDA-44D1-889C-8B87049D1038}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YesserEngine.TemplateProjects.OpenGL", "YesserEngine.TemplateProjects.OpenGL\YesserEngine.TemplateProjects.OpenGL.csproj", "{9EA92E19-5728-4762-88DE-4312591CC935}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YesserEngine.OpenGL", "YesserEngine.OpenGL\YesserEngine.OpenGL.csproj", "{E3923591-D998-4608-B321-7862EDB48C15}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -133,26 +133,6 @@ Global
 		{FA6B46C4-E0CA-4233-B3BE-B66614F4702D}.Release|x86.ActiveCfg = Release|x86
 		{FA6B46C4-E0CA-4233-B3BE-B66614F4702D}.Release|x86.Build.0 = Release|x86
 		{FA6B46C4-E0CA-4233-B3BE-B66614F4702D}.Release|x86.Deploy.0 = Release|x86
-		{74D39039-7585-4B17-99DD-9DC6A5E7EC67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{74D39039-7585-4B17-99DD-9DC6A5E7EC67}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{74D39039-7585-4B17-99DD-9DC6A5E7EC67}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{74D39039-7585-4B17-99DD-9DC6A5E7EC67}.Debug|ARM.Build.0 = Debug|Any CPU
-		{74D39039-7585-4B17-99DD-9DC6A5E7EC67}.Debug|arm64.ActiveCfg = Debug|Any CPU
-		{74D39039-7585-4B17-99DD-9DC6A5E7EC67}.Debug|arm64.Build.0 = Debug|Any CPU
-		{74D39039-7585-4B17-99DD-9DC6A5E7EC67}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{74D39039-7585-4B17-99DD-9DC6A5E7EC67}.Debug|x64.Build.0 = Debug|Any CPU
-		{74D39039-7585-4B17-99DD-9DC6A5E7EC67}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{74D39039-7585-4B17-99DD-9DC6A5E7EC67}.Debug|x86.Build.0 = Debug|Any CPU
-		{74D39039-7585-4B17-99DD-9DC6A5E7EC67}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{74D39039-7585-4B17-99DD-9DC6A5E7EC67}.Release|Any CPU.Build.0 = Release|Any CPU
-		{74D39039-7585-4B17-99DD-9DC6A5E7EC67}.Release|ARM.ActiveCfg = Release|Any CPU
-		{74D39039-7585-4B17-99DD-9DC6A5E7EC67}.Release|ARM.Build.0 = Release|Any CPU
-		{74D39039-7585-4B17-99DD-9DC6A5E7EC67}.Release|arm64.ActiveCfg = Release|Any CPU
-		{74D39039-7585-4B17-99DD-9DC6A5E7EC67}.Release|arm64.Build.0 = Release|Any CPU
-		{74D39039-7585-4B17-99DD-9DC6A5E7EC67}.Release|x64.ActiveCfg = Release|Any CPU
-		{74D39039-7585-4B17-99DD-9DC6A5E7EC67}.Release|x64.Build.0 = Release|Any CPU
-		{74D39039-7585-4B17-99DD-9DC6A5E7EC67}.Release|x86.ActiveCfg = Release|Any CPU
-		{74D39039-7585-4B17-99DD-9DC6A5E7EC67}.Release|x86.Build.0 = Release|Any CPU
 		{00C607E0-3CDA-44D1-889C-8B87049D1038}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{00C607E0-3CDA-44D1-889C-8B87049D1038}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00C607E0-3CDA-44D1-889C-8B87049D1038}.Debug|ARM.ActiveCfg = Debug|Any CPU
@@ -193,6 +173,26 @@ Global
 		{9EA92E19-5728-4762-88DE-4312591CC935}.Release|x64.Build.0 = Release|Any CPU
 		{9EA92E19-5728-4762-88DE-4312591CC935}.Release|x86.ActiveCfg = Release|x86
 		{9EA92E19-5728-4762-88DE-4312591CC935}.Release|x86.Build.0 = Release|x86
+		{E3923591-D998-4608-B321-7862EDB48C15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3923591-D998-4608-B321-7862EDB48C15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3923591-D998-4608-B321-7862EDB48C15}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{E3923591-D998-4608-B321-7862EDB48C15}.Debug|ARM.Build.0 = Debug|Any CPU
+		{E3923591-D998-4608-B321-7862EDB48C15}.Debug|arm64.ActiveCfg = Debug|Any CPU
+		{E3923591-D998-4608-B321-7862EDB48C15}.Debug|arm64.Build.0 = Debug|Any CPU
+		{E3923591-D998-4608-B321-7862EDB48C15}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E3923591-D998-4608-B321-7862EDB48C15}.Debug|x64.Build.0 = Debug|Any CPU
+		{E3923591-D998-4608-B321-7862EDB48C15}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E3923591-D998-4608-B321-7862EDB48C15}.Debug|x86.Build.0 = Debug|Any CPU
+		{E3923591-D998-4608-B321-7862EDB48C15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3923591-D998-4608-B321-7862EDB48C15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3923591-D998-4608-B321-7862EDB48C15}.Release|ARM.ActiveCfg = Release|Any CPU
+		{E3923591-D998-4608-B321-7862EDB48C15}.Release|ARM.Build.0 = Release|Any CPU
+		{E3923591-D998-4608-B321-7862EDB48C15}.Release|arm64.ActiveCfg = Release|Any CPU
+		{E3923591-D998-4608-B321-7862EDB48C15}.Release|arm64.Build.0 = Release|Any CPU
+		{E3923591-D998-4608-B321-7862EDB48C15}.Release|x64.ActiveCfg = Release|Any CPU
+		{E3923591-D998-4608-B321-7862EDB48C15}.Release|x64.Build.0 = Release|Any CPU
+		{E3923591-D998-4608-B321-7862EDB48C15}.Release|x86.ActiveCfg = Release|Any CPU
+		{E3923591-D998-4608-B321-7862EDB48C15}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -202,7 +202,7 @@ Global
 	EndGlobalSection
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		YesserEngine.Shared\YesserEngine.Shared.projitems*{6121d244-c789-473e-be27-5aed39f62d05}*SharedItemsImports = 4
-		YesserEngine.Shared\YesserEngine.Shared.projitems*{74d39039-7585-4b17-99dd-9dc6a5e7ec67}*SharedItemsImports = 5
 		YesserEngine.Shared\YesserEngine.Shared.projitems*{a0cdbd0e-3a41-42b7-9425-a838bc2c7383}*SharedItemsImports = 13
+		YesserEngine.Shared\YesserEngine.Shared.projitems*{e3923591-d998-4608-b321-7862edb48c15}*SharedItemsImports = 5
 	EndGlobalSection
 EndGlobal
