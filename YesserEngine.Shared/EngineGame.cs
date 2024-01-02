@@ -1,9 +1,9 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;
-using YesserEngine.Shared.CustomEventArgs;
+using YesserEngine.CustomEventArgs;
 
-namespace YesserEngine.Shared
+namespace YesserEngine
 {
     public class EngineGame : Game
     {
@@ -13,6 +13,8 @@ namespace YesserEngine.Shared
 
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
+
+        private bool _instaExit = false;
 
         public EngineGame()
         {
@@ -24,6 +26,9 @@ namespace YesserEngine.Shared
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
+
+            if (_instaExit)
+                Exit();
 
             base.Initialize();
         }
@@ -80,10 +85,13 @@ namespace YesserEngine.Shared
         }
 
 #if DEBUG
-        public EngineGame(bool tests)
+        public EngineGame(bool instaExit)
         {
-            if (!tests)
-                
+            _instaExit = instaExit;
+
+            _graphics = new GraphicsDeviceManager(this);
+            Content.RootDirectory = "Content";
+            IsMouseVisible = true;
         }
 
         public void InvokeLoadContentEvent(ContentEventArgs args)

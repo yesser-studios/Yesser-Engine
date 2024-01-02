@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using YesserEngine.Shared.CustomEventArgs;
+using YesserEngine.CustomEventArgs;
 
-namespace YesserEngine.Shared
+namespace YesserEngine
 {
     public interface IGameObject
     {
