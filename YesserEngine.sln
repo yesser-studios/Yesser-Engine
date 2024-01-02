@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YesserEngine.UWP", "YesserE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YesserEngine.UWP.Tests", "YesserEngine.UWP.Tests\YesserEngine.UWP.Tests.csproj", "{FA6B46C4-E0CA-4233-B3BE-B66614F4702D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YesserEngine.Core", "YesserEngine.Core\YesserEngine.Core.csproj", "{74D39039-7585-4B17-99DD-9DC6A5E7EC67}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -127,6 +129,26 @@ Global
 		{FA6B46C4-E0CA-4233-B3BE-B66614F4702D}.Release|x86.ActiveCfg = Release|x86
 		{FA6B46C4-E0CA-4233-B3BE-B66614F4702D}.Release|x86.Build.0 = Release|x86
 		{FA6B46C4-E0CA-4233-B3BE-B66614F4702D}.Release|x86.Deploy.0 = Release|x86
+		{74D39039-7585-4B17-99DD-9DC6A5E7EC67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74D39039-7585-4B17-99DD-9DC6A5E7EC67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74D39039-7585-4B17-99DD-9DC6A5E7EC67}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{74D39039-7585-4B17-99DD-9DC6A5E7EC67}.Debug|ARM.Build.0 = Debug|Any CPU
+		{74D39039-7585-4B17-99DD-9DC6A5E7EC67}.Debug|arm64.ActiveCfg = Debug|Any CPU
+		{74D39039-7585-4B17-99DD-9DC6A5E7EC67}.Debug|arm64.Build.0 = Debug|Any CPU
+		{74D39039-7585-4B17-99DD-9DC6A5E7EC67}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{74D39039-7585-4B17-99DD-9DC6A5E7EC67}.Debug|x64.Build.0 = Debug|Any CPU
+		{74D39039-7585-4B17-99DD-9DC6A5E7EC67}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{74D39039-7585-4B17-99DD-9DC6A5E7EC67}.Debug|x86.Build.0 = Debug|Any CPU
+		{74D39039-7585-4B17-99DD-9DC6A5E7EC67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74D39039-7585-4B17-99DD-9DC6A5E7EC67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74D39039-7585-4B17-99DD-9DC6A5E7EC67}.Release|ARM.ActiveCfg = Release|Any CPU
+		{74D39039-7585-4B17-99DD-9DC6A5E7EC67}.Release|ARM.Build.0 = Release|Any CPU
+		{74D39039-7585-4B17-99DD-9DC6A5E7EC67}.Release|arm64.ActiveCfg = Release|Any CPU
+		{74D39039-7585-4B17-99DD-9DC6A5E7EC67}.Release|arm64.Build.0 = Release|Any CPU
+		{74D39039-7585-4B17-99DD-9DC6A5E7EC67}.Release|x64.ActiveCfg = Release|Any CPU
+		{74D39039-7585-4B17-99DD-9DC6A5E7EC67}.Release|x64.Build.0 = Release|Any CPU
+		{74D39039-7585-4B17-99DD-9DC6A5E7EC67}.Release|x86.ActiveCfg = Release|Any CPU
+		{74D39039-7585-4B17-99DD-9DC6A5E7EC67}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -136,6 +158,7 @@ Global
 	EndGlobalSection
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		YesserEngine.Shared\YesserEngine.Shared.projitems*{6121d244-c789-473e-be27-5aed39f62d05}*SharedItemsImports = 4
+		YesserEngine.Shared\YesserEngine.Shared.projitems*{74d39039-7585-4b17-99dd-9dc6a5e7ec67}*SharedItemsImports = 5
 		YesserEngine.Shared\YesserEngine.Shared.projitems*{a0cdbd0e-3a41-42b7-9425-a838bc2c7383}*SharedItemsImports = 13
 	EndGlobalSection
 EndGlobal
