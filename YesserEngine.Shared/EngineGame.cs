@@ -84,6 +84,19 @@ namespace YesserEngine
             gameObject.Initialize();
         }
 
+        /// <summary>
+        /// Registers multiple game objects that implement <see cref="IGameObject"/>
+        /// to have their Initialize method called instantly and LoadContent, Update and Draw methods upon the corresponding events fired.
+        /// </summary>
+        /// <param name="gameObjects">The game objects to be registered</param>
+        public virtual void RegisterGameObjects(params IGameObject[] gameObjects)
+        {
+            foreach (var gameObject in gameObjects)
+            {
+                RegisterGameObject(gameObject);
+            }
+        }
+
 #if DEBUG
         public EngineGame(bool instaExit)
         {
