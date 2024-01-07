@@ -1,11 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using YesserEngine.Components;
 using YesserEngine.CustomEventArgs;
 
-namespace YesserEngine.Shared
+namespace YesserEngine
 {
-    internal class GameObject : IGameObject
+    public class GameObject : IGameObject
     {
         #region Properties
         /// <summary>
@@ -49,6 +51,11 @@ namespace YesserEngine.Shared
         /// See also: <seealso cref="EngineGame.RegisterGameObject(IGameObject)"/>
         /// </summary>
         public EngineGame RegisteredIn {  get; set; }
+
+        /// <summary>
+        /// The registered <see cref="IComponent"/>s of this <see cref="GameObject"/>.
+        /// </summary>
+        public List<IComponent> Components { get; set; }
         #endregion
 
         protected Texture2D texture;
@@ -91,14 +98,11 @@ namespace YesserEngine.Shared
             return outOfScreen;
         }
 
-        public bool CollidesWith(GameObject other)
+        public void AddComponent(IComponent component)
         {
-            if (other == null) return false;
-
-            return (X + (Width / 2) >= other.X - (other.Width / 2))
-                && (other.X + (other.Width / 2) >= X - (Width / 2))
-                && (Y + (Height / 2) >= other.Y - (other.Height / 2))
-                && (other.Y + (other.Height / 2) >= Y - (Height / 2));
+            Components.Add(component);
+            component.RegisteredIn = this;
+            component.Initialize();
         }
     }
 }
