@@ -211,8 +211,8 @@ Global
 		SolutionGuid = {C2020576-107D-417A-8458-9408755E569B}
 	EndGlobalSection
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		YesserEngine.Shared\YesserEngine.Shared.projitems*{6121d244-c789-473e-be27-5aed39f62d05}*SharedItemsImports = 4
+		YesserEngine.Shared\YesserEngine.projitems*{6121d244-c789-473e-be27-5aed39f62d05}*SharedItemsImports = 4
 		YesserEngine.Shared\YesserEngine.projitems*{a0cdbd0e-3a41-42b7-9425-a838bc2c7383}*SharedItemsImports = 13
-		YesserEngine.Shared\YesserEngine.Shared.projitems*{e3923591-d998-4608-b321-7862edb48c15}*SharedItemsImports = 5
+		YesserEngine.Shared\YesserEngine.projitems*{e3923591-d998-4608-b321-7862edb48c15}*SharedItemsImports = 5
 	EndGlobalSection
 EndGlobal

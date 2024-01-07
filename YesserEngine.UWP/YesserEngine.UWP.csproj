@@ -137,7 +137,7 @@
   <ItemGroup>
     <None Include="YesserEngine.UWP.nuspec" />
   </ItemGroup>
-  <Import Project="..\YesserEngine.Shared\YesserEngine.Shared.projitems" Label="Shared" />
+  <Import Project="..\YesserEngine.Shared\YesserEngine.projitems" Label="Shared" />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
