@@ -10,7 +10,6 @@ namespace YesserEngine
             list.OfType<TToGet>().FirstOrNull();
         }
 
-
         public static object FirstOrNull<T>(this IEnumerable<T> enumerable)
         {
             if (enumerable == null || !enumerable.Any())
