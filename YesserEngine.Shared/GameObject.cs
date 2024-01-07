@@ -78,10 +78,7 @@ namespace YesserEngine.Shared
         public virtual void LoadContent(object sender, ContentEventArgs e)
             => texture = e.Content.Load<Texture2D>(textureString);
 
-        public virtual void Update(object sender, EventArgs e)
-        {
-            
-        }
+        public virtual void Update(object sender, EventArgs e) { }
 
         public ScreenSide CheckOutOfScreen()
         {
@@ -98,10 +95,10 @@ namespace YesserEngine.Shared
         {
             if (other == null) return false;
 
-            return (X + Width / 2 >= other.X - other.Width / 2)
-                && (other.X + other.Width / 2 >= X - Width / 2)
-                && (Y + Height / 2 >= other.Y - other.Height / 2)
-                && (other.Y + other.Height / 2 >= Y - Height / 2);
+            return (X + (Width / 2) >= other.X - (other.Width / 2))
+                && (other.X + (other.Width / 2) >= X - (Width / 2))
+                && (Y + (Height / 2) >= other.Y - (other.Height / 2))
+                && (other.Y + (other.Height / 2) >= Y - (Height / 2));
         }
     }
 }
