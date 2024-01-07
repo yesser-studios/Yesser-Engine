@@ -16,6 +16,9 @@
     <None Include="$(MSBuildThisFileDirectory)Content\Content.mgcb" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)ComponentList.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Components\Collider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Components\IComponent.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)CustomEventArgs\DrawEventArgs.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)CustomEventArgs\ContentEventArgs.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)EngineGame.cs" />

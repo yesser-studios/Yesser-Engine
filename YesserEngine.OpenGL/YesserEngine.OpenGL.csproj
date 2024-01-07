@@ -22,5 +22,5 @@
       <PrivateAssets>All</PrivateAssets>
     </PackageReference>
   </ItemGroup>
-  <Import Project="..\YesserEngine.Shared\YesserEngine.Shared.projitems" Label="Shared" />
+  <Import Project="..\YesserEngine.Shared\YesserEngine.projitems" Label="Shared" />
 </Project>
