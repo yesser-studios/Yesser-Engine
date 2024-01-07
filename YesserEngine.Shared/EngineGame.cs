@@ -8,6 +8,16 @@ namespace YesserEngine
     public class EngineGame : Game
     {
         /// <summary>
+        /// The width of the drawable game screen.
+        /// </summary>
+        public float GameScreenWidth { get => _gameResolution.X; }
+
+        /// <summary>
+        /// The height of the drawable game screen.
+        /// </summary>
+        public float GameScreenHeight { get => _gameResolution.Y; }
+
+        /// <summary>
         /// This event gets called when the <see cref="LoadContent"/> method gets called.
         /// </summary>
         public event EventHandler<ContentEventArgs> LoadContentEvent;
@@ -22,10 +32,11 @@ namespace YesserEngine
         /// </summary>
         public event EventHandler<DrawEventArgs> DrawEvent;
 
-        private GraphicsDeviceManager _graphics;
-        private SpriteBatch _spriteBatch;
-
-        private bool _instaExit = false;
+        protected Point _gameResolution;
+        protected GraphicsDeviceManager _graphics;
+        protected SpriteBatch _spriteBatch;
+        protected RenderTarget2D _renderTarget;
+        protected Rectangle _renderTargetDestination;
 
         /// <summary>
         /// The main constructor for the game.
@@ -41,8 +52,22 @@ namespace YesserEngine
         {
             // TODO: Add your initialization logic here
 
+            _gameResolution = new Point(_graphics.PreferredBackBufferWidth, _graphics.PreferredBackBufferHeight);
+
+            _renderTarget = new RenderTarget2D(
+                GraphicsDevice,
+                _gameResolution.X,
+                _gameResolution.Y);
+
+            _renderTargetDestination = GetRenderTargetDestination(
+                _gameResolution,
+                _graphics.PreferredBackBufferWidth,
+                _graphics.PreferredBackBufferHeight);
+
+#if DEBUG
             if (_instaExit)
                 Exit();
+#endif
 
             base.Initialize();
         }
@@ -116,7 +141,41 @@ namespace YesserEngine
             }
         }
 
+        Rectangle GetRenderTargetDestination(Point resolution, int preferredBackBufferWidth, int preferredBackBufferHeight)
+        {
+            float resolutionRatio = (float)resolution.X / resolution.Y;
+            float screenRatio;
+            Point bounds = new Point(preferredBackBufferWidth, preferredBackBufferHeight);
+            screenRatio = (float)bounds.X / bounds.Y;
+            float scale;
+            Rectangle rectangle = new Rectangle();
+
+            if (resolutionRatio < screenRatio)
+                scale = (float)bounds.Y / resolution.Y;
+            else if (resolutionRatio > screenRatio)
+                scale = (float)bounds.X / resolution.X;
+            else
+            {
+                // Resolution and window/screen share aspect ratio
+                rectangle.Size = bounds;
+                return rectangle;
+            }
+            rectangle.Width = (int)(resolution.X * scale);
+            rectangle.Height = (int)(resolution.Y * scale);
+            return CenterRectangle(new Rectangle(Point.Zero, bounds), rectangle);
+        }
+
+        static Rectangle CenterRectangle(Rectangle outerRectangle, Rectangle innerRectangle)
+        {
+            Point delta = outerRectangle.Center - innerRectangle.Center;
+            innerRectangle.Offset(delta);
+            return innerRectangle;
+        }
+
 #if DEBUG
+        #region Debugging/Testing Methods
+        private readonly bool _instaExit = false;
+
         /// <summary>
         /// A debugging constructor used for testing game window appearance.
         /// DO NOT use outside tests and other debug builds.
@@ -164,6 +223,7 @@ namespace YesserEngine
         {
             DrawEvent(this, args);
         }
+        #endregion
 #endif
     }
 }
