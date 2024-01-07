@@ -37,6 +37,9 @@ namespace YesserEngine
         protected SpriteBatch _spriteBatch;
         protected RenderTarget2D _renderTarget;
         protected Rectangle _renderTargetDestination;
+        protected bool _useRenderTarget = false;
+
+        protected Color _backgroundColor = Color.CornflowerBlue;
 
         /// <summary>
         /// The main constructor for the game.
@@ -98,14 +101,28 @@ namespace YesserEngine
 
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            if (_useRenderTarget)
+                GraphicsDevice.SetRenderTarget(_renderTarget);
+
+            GraphicsDevice.Clear(_backgroundColor);
 
             // TODO: Add your drawing code here
-
+            _spriteBatch.Begin(samplerState: SamplerState.PointWrap);
             if (DrawEvent != null)
             {
                 var args = new DrawEventArgs(_spriteBatch);
                 DrawEvent(this, args);
+            }
+            _spriteBatch.End();
+
+            if (_useRenderTarget)
+            {
+                GraphicsDevice.SetRenderTarget(null);
+                GraphicsDevice.Clear(_backgroundColor);
+
+                _spriteBatch.Begin(samplerState: SamplerState.PointWrap);
+                _spriteBatch.Draw(_renderTarget, _renderTargetDestination, Color.White);
+                _spriteBatch.End();
             }
 
             base.Draw(gameTime);
