@@ -27,10 +27,10 @@ namespace YesserEngine.Components
         {
             if (other == null) return false;
 
-            float x = RegisteredIn.X + XOffset;
-            float y = RegisteredIn.Y + YOffset;
-            float otherX = other.RegisteredIn.X + other.XOffset;
-            float otherY = other.RegisteredIn.Y + other.YOffset;            
+            float x = RegisteredIn != null ? RegisteredIn.X + XOffset : XOffset;
+            float y = RegisteredIn != null ? RegisteredIn.Y + YOffset : YOffset;
+            float otherX = other.RegisteredIn != null ? other.RegisteredIn.X + other.XOffset : other.XOffset;
+            float otherY = other.RegisteredIn != null ? other.RegisteredIn.Y + other.YOffset : other.YOffset;
 
             return (x + (Width / 2) >= otherX - (other.Width / 2))
                 && (otherX + (other.Width / 2) >= x - (Width / 2))
