@@ -14,7 +14,9 @@ namespace YesserEngine.OpenGL.Tests
         public bool LoadContentRan = false;
         public bool UpdateRan = false;
 
-        public void Draw(object sender, ContentEventArgs e)
+        public EngineGame? RegisteredIn { get; set; }
+
+        public void Draw(object sender, DrawEventArgs e)
         {
             DrawRan = true;
         }

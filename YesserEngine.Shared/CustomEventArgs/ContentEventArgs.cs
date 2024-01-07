@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework.Graphics;
+﻿using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -9,11 +10,11 @@ namespace YesserEngine.CustomEventArgs
     {
         public static new ContentEventArgs Empty = new ContentEventArgs(null);
 
-        public SpriteBatch SpriteBatch {  get; set; }
+        public ContentManager Content { get; set; }
 
-        public ContentEventArgs(SpriteBatch spriteBatch)
+        public ContentEventArgs(ContentManager content)
         {
-            SpriteBatch = spriteBatch;
+            Content = content;
         }
     }
 }
