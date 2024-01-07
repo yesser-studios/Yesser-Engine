@@ -20,7 +20,7 @@ namespace YesserEngine
         /// <summary>
         /// This event gets called when the <see cref="Draw(GameTime)"/> method gets called.
         /// </summary>
-        public event EventHandler<ContentEventArgs> DrawEvent;
+        public event EventHandler<DrawEventArgs> DrawEvent;
 
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
@@ -53,7 +53,7 @@ namespace YesserEngine
 
             if (LoadContentEvent != null)
             {
-                var args = new ContentEventArgs(_spriteBatch);
+                var args = new ContentEventArgs(Content);
                 LoadContentEvent(this, args);
             }
 
@@ -79,7 +79,7 @@ namespace YesserEngine
 
             if (DrawEvent != null)
             {
-                var args = new ContentEventArgs(_spriteBatch);
+                var args = new DrawEventArgs(_spriteBatch);
                 DrawEvent(this, args);
             }
 
@@ -159,8 +159,8 @@ namespace YesserEngine
         /// It is primarily to be used alongside <see cref="EngineGame(bool)"/> with the instaExit parameter for testing.
         /// This method will only be built on the DEBUG configuration.
         /// </summary>
-        /// <param name="args">The <see cref="ContentEventArgs"/> to pass into the event. Use <see cref="ContentEventArgs.Empty"/> to input empty args.</param>
-        public void InvokeDrawEvent(ContentEventArgs args)
+        /// <param name="args">The <see cref="DrawEventArgs"/> to pass into the event. Use <see cref="DrawEventArgs.Empty"/> to input empty args.</param>
+        public void InvokeDrawEvent(DrawEventArgs args)
         {
             DrawEvent(this, args);
         }

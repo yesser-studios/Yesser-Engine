@@ -10,6 +10,6 @@ namespace YesserEngine
         void Initialize();
         void LoadContent(object sender, ContentEventArgs e);
         void Update(object sender, EventArgs e);
-        void Draw(object sender, ContentEventArgs e);
+        void Draw(object sender, DrawEventArgs e);
     }
 }

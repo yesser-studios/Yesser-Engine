@@ -27,7 +27,7 @@ namespace YesserEngine.Core.Tests
 
             game.InvokeLoadContentEvent(ContentEventArgs.Empty);
             game.InvokeUpdateEvent(EventArgs.Empty);
-            game.InvokeDrawEvent(ContentEventArgs.Empty);
+            game.InvokeDrawEvent(DrawEventArgs.Empty);
 
             Assert.IsTrue(gameObj.InitializeRan);
             Assert.IsTrue(gameObj.LoadContentRan);
