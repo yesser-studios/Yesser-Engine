@@ -3,7 +3,6 @@ using System.Linq;
 
 namespace YesserEngine
 {
-#nullable enable
     public static class ListExtensions
     {
         public static void FirstOfType<TIn, TToGet>(this List<TIn> list)
@@ -12,7 +11,7 @@ namespace YesserEngine
         }
 
 
-        public static object? FirstOrNull<T>(this IEnumerable<T> enumerable)
+        public static object FirstOrNull<T>(this IEnumerable<T> enumerable)
         {
             if (enumerable == null || !enumerable.Any())
                 return null;
