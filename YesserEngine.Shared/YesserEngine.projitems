@@ -24,6 +24,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)EngineGame.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GameObject.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IGameObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Player.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ScreenSide.cs" />
   </ItemGroup>
 </Project>
