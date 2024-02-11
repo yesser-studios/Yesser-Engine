@@ -6,6 +6,6 @@ namespace YesserEngine
 {
     public class ButtonMappingSet
     {
-        public List<>
+        public List<IButtonToMap> Buttons = new List<IButtonToMap>();
     }
 }
