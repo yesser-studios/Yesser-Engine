@@ -4,7 +4,7 @@ using System.Text;
 
 namespace YesserEngine
 {
-    public class ButtonMapping
+    public class ButtonMappingSet
     {
         public List<>
     }

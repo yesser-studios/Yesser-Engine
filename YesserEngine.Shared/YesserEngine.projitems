@@ -16,7 +16,7 @@
     <None Include="$(MSBuildThisFileDirectory)Content\Content.mgcb" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)Input\ButtonMapping.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Input\ButtonMappingSet.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ComponentList.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Components\Collider.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Components\IComponent.cs" />
