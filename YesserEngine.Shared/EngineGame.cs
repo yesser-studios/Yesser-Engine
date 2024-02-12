@@ -93,8 +93,8 @@ namespace YesserEngine
             // if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
             //     Exit();
 
-            if (UpdateEvent != null)
-                UpdateEvent(this, EventArgs.Empty);
+            // null propagation - if (UpdateEvent != null) UpdateEvent(this, EventArgs.Empty);
+            UpdateEvent?.Invoke(this, EventArgs.Empty);
 
             base.Update(gameTime);
         }
