@@ -37,7 +37,7 @@ body {
 }
 
 .header>h1>span {
-  background: linear-gradient(260deg, #3dcc47 0%, #73ccce 50%, #ccddcc 80%),#fff;
+  background: linear-gradient(260deg, #3dcc47 0%, #73cea7 50%, #ccddcc 80%),#fff;
   background-clip: text;
   color: transparent;
   text-decoration: underline;
