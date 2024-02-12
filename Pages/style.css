@@ -10,6 +10,7 @@
   --background: 20, 20, 20;
   --accent: 20, 40, 20;
   --text-color: 200, 200, 200;
+  --light-text-color: 240, 240, 240;
 
   font-family: "Mona Sans", sans-serif;
 }
@@ -20,6 +21,8 @@ body {
     rgb(var(--background)) 70%,
     rgb(var(--accent)) 100%
   );
+  background-repeat: repeat-x;
+  background-color: rgb(var(--background));
   height: 100vh;
   color: rgb(var(--text-color));
 }
@@ -41,4 +44,41 @@ body {
   background-clip: text;
   color: transparent;
   text-decoration: underline;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.container>.text {
+  margin-right: 50px;
+  font-size: 20px;
+}
+
+.container>.text>h2 {
+  font-size: 50px;
+  color: rgb(var(--light-text-color));
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
+.container>.image {
+  margin-left: 50px;
+}
+
+.container>.image>img {
+  max-width: 700px;
+  border-radius: 15px;
 }
