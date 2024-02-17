@@ -2,7 +2,7 @@ using YesserEngine;
 using YesserEngine.CustomEventArgs;
 using YesserEngine.OpenGL.Tests;
 
-namespace YesserEngine.Core.Tests
+namespace YesserEngine.OpenGL.Tests
 {
     [TestClass]
     public class EngineGameTests

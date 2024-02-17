@@ -1,7 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using YesserEngine.Components;
 
-namespace YesserEngine.OpenGL.Tests
+namespace YesserEngine.UWP.Tests
 {
     [TestClass]
     public class ComponentTests
